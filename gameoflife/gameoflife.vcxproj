@@ -159,12 +159,22 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
   <ItemGroup>
     <ClInclude Include="gui.h" />
     <ClInclude Include="kernel.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp" />
     <ClCompile Include="gui.cpp" />
     <ClCompile Include="util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gameoflife.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="screenshots\gameoflife.PNG" />
+    <Image Include="screenshots\gameoflife2.PNG" />
+    <Image Include="screenshots\gameoflife3.PNG" />
+    <Image Include="screenshots\gameoflife4.PNG" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
